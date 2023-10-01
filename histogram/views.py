@@ -1,7 +1,7 @@
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
 import json
-from .histogram import Histogram
+from histogram import Histogram
 
 histogram = Histogram([(3, 4.1), (8.5, 8.7), (4, 4.5), (0, 1.1), (31.5, 41.27)])
 

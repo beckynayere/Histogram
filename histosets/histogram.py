@@ -15,7 +15,7 @@ class Histogram:
         for sample in samples:
             interval = self.find_interval(sample)
             if interval:
-                with self.lock:  # Use a lock to ensure thread safety
+                with self.lock:  
                     self.interval_counts[interval] += 1
                     self.update_statistics(sample)
 
